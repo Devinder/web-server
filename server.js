@@ -33,7 +33,7 @@ app.get('/help', function(req, res){
 	res.send('Hi Expresso help');
 });
 
-//app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 app.listen(PORT, function(){
 	console.log('Express server started on '+ PORT);
